@@ -1,5 +1,5 @@
-var connect = require("connect");
-var http = require("http");
+var connect = require('connect');
+var http = require('http');
 var bodyParser = require('body-parser');
 
 
@@ -19,19 +19,19 @@ app.get('/lab2',function(req, res){
 
 	switch(method) {
     case "add":
-        code block
+        res.send(x+'+'+y+'='(x+y));
         break;
     case "subtract":
-        code block
+        res.send(x+'-'+y+'='(x-y));
         break;
     case "multiply":
-        code block
+        res.send(x+'*'+y+'='(x*y));
 		break;
 	case "divide":
-        code block
+        res.send(x+'/'+y+'='(x/y));
 		break;
 	default:
-		code block
+		res.send("It seems we've taken a wrong turn.");
 	}
 
 });
